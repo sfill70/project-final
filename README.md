@@ -33,8 +33,11 @@
    replace datasource, OAuth and mail (user, password) from application.yaml in secret.yaml.
 - данные считываются из переменной окружения машины - %SECRET_PROPERTY%, в ней указан путь к файлу secret.yaml
   с property
-4. s
-5. s
+4.  Переделать тесты так, чтоб во время тестов использовалась in memory БД (H2), а не PostgreSQL. 
+    Для этого нужно определить 2 бина, и выборка какой из них использовать должно определяться активным профилем Spring.
+
+5.  Написать тесты для всех публичных методов контроллера ProfileRestController.
+
 6. s
 7. s
 8. s

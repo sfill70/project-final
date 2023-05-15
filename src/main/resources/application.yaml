@@ -15,8 +15,8 @@ spring:
 
 #  3. replace datasource, OAuth, mail in secret.yaml
   config:
-#    import: secret.yaml
-    import: ${SECRET_PROPERTY}
+    import: secret.yaml
+#    import: ${SECRET_PROPERTY}
 #    import: D:\Final\project-final\src\main\resources\secret.yaml
   jpa:
     show-sql: true
