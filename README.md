@@ -22,4 +22,26 @@
 - https://habr.com/ru/articles/259055/
 
 Список выполненных задач:
-...
+
+2. Удалить социальные сети: vk, yandex
+   удалены кнопки login.html
+   удалены настройки для в application.yaml
+   handler  VkOAuth2UserDataHandler and YandexOAuth2UserDataHandler удалена анотация компонент классы оставлены
+   Изменены настройки liquibase
+
+3. перенесение из application.yaml datasource, OAuth и mail (user, password) (секция security)  в secret.yaml  
+   replace datasource, OAuth and mail (user, password) from application.yaml in secret.yaml.
+- данные считываются из переменной окружения машины - %SECRET_PROPERTY%, в ней указан путь к файлу secret.yaml
+  с property
+4. s
+5. s
+6. s
+7. s
+8. s
+9. s
+10. s
+11. s
+12. s
+13. 
+
+
