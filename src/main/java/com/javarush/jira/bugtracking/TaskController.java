@@ -24,5 +24,23 @@ public class TaskController {
         return "redirect:/";
     }
 
+    /* п.7*/
+    @PostMapping("/task/{id}/user/{userId}")
+    public String addUserToTask(@PathVariable("id") Long taskId, @PathVariable("userId") Long userId) {
+        taskService.addUserToTask(taskId, userId);
+        return "redirect:/";
+    }
+
+    @PostMapping(path = "/task/{id}/user", produces = {"application/json", MediaType.ALL_VALUE}, consumes = {"application/json", MediaType.ALL_VALUE})
+    public String addUserToTask(@PathVariable("id") Long taskId, @RequestBody String userId) {
+        long userIdLong = 0;
+        try {
+            userIdLong = Long.parseLong(userId);
+        } catch (NumberFormatException e) {
+            return "redirect:/";
+        }
+        taskService.addUserToTask(taskId, (long) userIdLong);
+        return "redirect:/";
+    }
 
 }

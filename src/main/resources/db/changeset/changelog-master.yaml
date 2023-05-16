@@ -1,8 +1,8 @@
 databaseChangeLog:
   - include:
       file: db/changeset/v1.0/changelog_1.sql
-#  - include:
-#      file: db/changeset/v1.0/changelog_2.sql
+  - include:
+      file: db/changeset/v1.0/changelog_2.sql
 #  - include:
 #      file: db/changeset/v1.0/changelog_3_p8.sql
 #  - include:

@@ -2,12 +2,14 @@ package com.javarush.jira.bugtracking;
 
 import com.javarush.jira.bugtracking.internal.mapper.TaskMapper;
 import com.javarush.jira.bugtracking.internal.model.Task;
+import com.javarush.jira.bugtracking.internal.model.UserBelong;
 import com.javarush.jira.bugtracking.internal.repository.ActivityRepository;
 import com.javarush.jira.bugtracking.internal.repository.TaskRepository;
 import com.javarush.jira.bugtracking.internal.repository.UserBelongRepository;
+import com.javarush.jira.bugtracking.to.ObjectType;
 import com.javarush.jira.bugtracking.to.TaskTo;
-import com.javarush.jira.common.error.NotFoundException;
-import com.javarush.jira.common.error.RestExceptionHandler;
+import com.javarush.jira.common.error.NotFoundException;;
+import com.javarush.jira.login.User;
 import com.javarush.jira.login.internal.UserRepository;
 import org.springframework.stereotype.Service;
 
@@ -58,5 +60,19 @@ public class TaskService extends BugtrackingService<Task, TaskTo, TaskRepository
         }
         return task.get();
     }
+
+    /* п.7*/
+    public void addUserToTask(Long taskId, Long userId) {
+        Task task = repository.getExisted(taskId);
+        User user = userRepository.getExisted(userId);
+        UserBelong userBelongTask = new UserBelong();
+        userBelongTask.setObjectId(task.getId());
+        userBelongTask.setObjectType(ObjectType.TASK);
+        userBelongTask.setUserId(user.getId());
+        userBelongTask.setUserTypeCode(user.getRoles().stream().toList().get(user.getRoles().size() - 1).toString());
+//        userBelongTask.setUserTypeCode("admin");
+        userBelongRepository.save(userBelongTask);
+    }
+
 
 }
