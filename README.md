@@ -38,7 +38,11 @@
 
 5.  Написать тесты для всех публичных методов контроллера ProfileRestController.
 
-6. s
+6. Добавить новый функционал: добавления тегов к задаче. Фронт делать необязательно.
+- в  TaskController добавлен POST метод addTagToTask, в TaskService метод addTagToTask
+  маппинг "/{id}/tag", принимает данные формата JSON и данные форм.
+- в TaskControllerRest добавлен PUT метод addTagToTask "/{id}/tags" принимает данные (array) формата JSON
+
 7. s
 8. s
 9. s
