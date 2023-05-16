@@ -12,7 +12,6 @@ public class ProfileTestData {
     public static final MatcherFactory.Matcher<ProfileTo> TO_MATCHER = MatcherFactory.usingIgnoringFieldsComparator(
             ProfileTo.class, "mailNotifications", "contacts"
     );
-
     public static final long PROFILE_ID = 1;
     public static final long PROFILE_ID_ADMIN = 2;
     public static final HashSet<String> MAIL_NOTIFICATIONS = new HashSet<>(List.of("assigned"));

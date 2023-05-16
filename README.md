@@ -62,8 +62,10 @@
 
 
 
-10. s
-11. s
+11. Добавить локализацию минимум на двух языках для шаблонов писем и стартовой страницы index.htm
+- Добавлено с использованием Internationalization (i18n)
+- https://javastudy.ru/spring-mvc/localization/
+
 12. s
 13. 
 
