@@ -65,7 +65,7 @@
 - Добавлено с использованием Internationalization (i18n)
 - https://javastudy.ru/spring-mvc/localization/
 
-12. s
+
 13. 
 
 
