@@ -48,8 +48,20 @@
   маппинг "/task/{id}/user/{userId}", где {id} id - task, {userId} - id user
   пример (/task/2/user/1} добавляет task id=2, user id=1)
   маппинг "/task/{id}/user", принимает данные формата JSON, text, html, xml в виде String (Integer поддерживает только JSON).
-8. s
-9. s
+
+8. Добавить автоматический подсчет времени сколько задача находилась в работе и тестировании.
+   Написать 2 метода на уровни сервиса, который параметром принимает задачу и возвращают затраченное время.
+- в TaskService добавлен один метод public Map<String, String> getTaskSummary(Long taskId) который возвращает Map с
+  требуемыми результатами
+- TaskControllerRest добавлен POST  metod  getSummary мапинг "/summary/{id}", возвращает  Map c результатом подсчета.
+  Fix StackOverflowError in interface TaskMapper.
+
+9. uki
+
+10. 
+
+
+
 10. s
 11. s
 12. s
