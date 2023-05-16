@@ -56,9 +56,10 @@
 - TaskControllerRest добавлен POST  metod  getSummary мапинг "/summary/{id}", возвращает  Map c результатом подсчета.
   Fix StackOverflowError in interface TaskMapper.
 
-9. uki
+9. Написать Dockerfile для основного сервера
 
-10. 
+10. Написать docker-compose файл для запуска контейнера сервера вместе с БД и nginx. Для nginx используй конфиг-файл config/nginx.conf.
+-  При необходимости файл конфига можно редактировать. Hard task
 
 11. Добавить локализацию минимум на двух языках для шаблонов писем и стартовой страницы index.htm
 - Добавлено с использованием Internationalization (i18n)
