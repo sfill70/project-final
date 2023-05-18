@@ -33,12 +33,12 @@
    replace datasource, OAuth and mail (user, password) from application.yaml in secret.yaml.
 - данные считываются из переменной окружения машины - %SECRET_PROPERTY%, в ней указан путь к файлу secret.yaml
   с property
-  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/tree/master/resources/static/img/secret_property.png)
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/secret_property.png)
 4.  Переделать тесты так, чтоб во время тестов использовалась in memory БД (H2), а не PostgreSQL. 
     Для этого нужно определить 2 бина, и выборка какой из них использовать должно определяться активным профилем Spring.
 
 5.  Написать тесты для всех публичных методов контроллера ProfileRestController.
-    ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/tree/master/resources/static/img/test.png)
+    ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/test.png)
 
 6. Добавить новый функционал: добавления тегов к задаче. Фронт делать необязательно.
 - в  TaskController добавлен POST метод addTagToTask, в TaskService метод addTagToTask
