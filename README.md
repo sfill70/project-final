@@ -33,15 +33,18 @@
    replace datasource, OAuth and mail (user, password) from application.yaml in secret.yaml.
 - данные считываются из переменной окружения машины - %SECRET_PROPERTY%, в ней указан путь к файлу secret.yaml
   с property
+  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/secret_property.png)
 4.  Переделать тесты так, чтоб во время тестов использовалась in memory БД (H2), а не PostgreSQL. 
     Для этого нужно определить 2 бина, и выборка какой из них использовать должно определяться активным профилем Spring.
 
 5.  Написать тесты для всех публичных методов контроллера ProfileRestController.
+    ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/test.png)
 
 6. Добавить новый функционал: добавления тегов к задаче. Фронт делать необязательно.
 - в  TaskController добавлен POST метод addTagToTask, в TaskService метод addTagToTask
   маппинг "/{id}/tag", принимает данные формата JSON и данные форм.
 - в TaskControllerRest добавлен PUT метод addTagToTask "/{id}/tags" принимает данные (array) формата JSON
+  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/point_6.png)
 
 7. Добавить возможность подписываться на задачи, которые не назначены на текущего пользователя.
 - в  DashboardUIController добавлен метод addUserToTask, в TaskService метод addUserToTask
@@ -55,17 +58,27 @@
   требуемыми результатами
 - TaskControllerRest добавлен POST  metod  getSummary мапинг "/summary/{id}", возвращает  Map c результатом подсчета.
   Fix StackOverflowError in interface TaskMapper.
+  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/login.png)
+  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/summary_8.png)
 
 9. Написать Dockerfile для основного сервера
+  Написан
 
 10. Написать docker-compose файл для запуска контейнера сервера вместе с БД и nginx. Для nginx используй конфиг-файл config/nginx.conf.
 -  При необходимости файл конфига можно редактировать. Hard task
+- Написан
 
 11. Добавить локализацию минимум на двух языках для шаблонов писем и стартовой страницы index.htm
 - Добавлено с использованием Internationalization (i18n)
 - https://javastudy.ru/spring-mvc/localization/
+  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/local_ru.png)
+  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/local_en.png)
+
+12.ау
+13.ка
+
+После запуска docker-compose up проект доступен по алресу localhost:88
 
 
-13. 
 
 
