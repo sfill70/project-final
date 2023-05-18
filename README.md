@@ -76,7 +76,7 @@
 - Добавлено с использованием Internationalization (i18n)
 - https://javastudy.ru/spring-mvc/localization/
   ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/local_ru.png)
-  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/run_in_docker_2.png)
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/local_en.pngg)
 
 12.ау
 13.ка
