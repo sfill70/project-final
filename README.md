@@ -67,6 +67,9 @@
 10. Написать docker-compose файл для запуска контейнера сервера вместе с БД и nginx. Для nginx используй конфиг-файл config/nginx.conf.
 -  При необходимости файл конфига можно редактировать. Hard task
 - Написан
+  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/run_in_docker.png)
+  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/run_in_docker_2.png)
+
 
 11. Добавить локализацию минимум на двух языках для шаблонов писем и стартовой страницы index.htm
 - Добавлено с использованием Internationalization (i18n)
