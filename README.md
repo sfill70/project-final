@@ -44,6 +44,7 @@
 - в  TaskController добавлен POST метод addTagToTask, в TaskService метод addTagToTask
   маппинг "/{id}/tag", принимает данные формата JSON и данные форм.
 - в TaskControllerRest добавлен PUT метод addTagToTask "/{id}/tags" принимает данные (array) формата JSON
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/point_6.png)
   ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/point_6.png)
 
 7. Добавить возможность подписываться на задачи, которые не назначены на текущего пользователя.
@@ -58,8 +59,8 @@
   требуемыми результатами
 - TaskControllerRest добавлен POST  metod  getSummary мапинг "/summary/{id}", возвращает  Map c результатом подсчета.
   Fix StackOverflowError in interface TaskMapper.
-  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/login.png)
-  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/summary_8.png)
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/login.png)
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/summary_8.png)
 
 9. Написать Dockerfile для основного сервера
   Написан
@@ -67,15 +68,15 @@
 10. Написать docker-compose файл для запуска контейнера сервера вместе с БД и nginx. Для nginx используй конфиг-файл config/nginx.conf.
 -  При необходимости файл конфига можно редактировать. Hard task
 - Написан
-  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/run_in_docker.png)
-  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/run_in_docker_2.png)
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/run_in_docker.png)
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/run_in_docker_2.png)
 
 
 11. Добавить локализацию минимум на двух языках для шаблонов писем и стартовой страницы index.htm
 - Добавлено с использованием Internationalization (i18n)
 - https://javastudy.ru/spring-mvc/localization/
-  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/local_ru.png)
-  ![Image alt](https://raw.githubusercontent.com/sfill70/project-final/blob/master/resources/static/img/local_en.png)
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/local_ru.png)
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/run_in_docker_2.png)
 
 12.ау
 13.ка
