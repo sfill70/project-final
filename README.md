@@ -83,7 +83,8 @@
 12.ау
 13.ка
 
-После запуска docker-compose up проект доступен по алресу localhost:88
+Собрать проект - mvn clean install 
+После запуска docker-compose up - проект доступен по алресу localhost:88
 
 
 
