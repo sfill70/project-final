@@ -29,7 +29,7 @@ public class TaskControllerRest {
                 throw new IllegalRequestDataException("incorrect tag length with number=" + (i + 1));
             }
         }
-        Task task = taskService.addTagsToTask(id, Set.copyOf(Arrays.asList(tags)));
+        Task task = taskService.addTagsToTask(id, Set.of(tags));
         return ResponseEntity.ok(task);
     }
 
