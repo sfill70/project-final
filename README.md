@@ -39,6 +39,7 @@
 
 5.  Написать тесты для всех публичных методов контроллера ProfileRestController.
     ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/test.png)
+    ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/test2.png)
 
 6. Добавить новый функционал: добавления тегов к задаче. Фронт делать необязательно.
 - в  TaskController добавлен POST метод addTagToTask, в TaskService метод addTagToTask
