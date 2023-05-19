@@ -7,8 +7,8 @@ import org.springframework.test.context.TestPropertySource;
 
 
 @SpringBootTest
-@ActiveProfiles("test")
-@TestPropertySource("classpath:application-test.yaml")
+//@ActiveProfiles("test")
+//@TestPropertySource("classpath:application-test.yaml")
 class JiraRushApplicationTests {
 	@Test
 	void contextLoads() {
