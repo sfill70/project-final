@@ -9,9 +9,12 @@ import com.javarush.jira.bugtracking.internal.repository.TaskRepository;
 import com.javarush.jira.bugtracking.internal.repository.UserBelongRepository;
 import com.javarush.jira.bugtracking.to.ObjectType;
 import com.javarush.jira.bugtracking.to.TaskTo;
+import com.javarush.jira.common.error.IllegalRequestDataException;
 import com.javarush.jira.common.error.NotFoundException;;
 import com.javarush.jira.login.User;
 import com.javarush.jira.login.internal.UserRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 
@@ -58,8 +61,10 @@ public class TaskService extends BugtrackingService<Task, TaskTo, TaskRepository
     public Task addTagsToTask(Long taskId, Set<String> tags) {
         Optional<Task> task = taskRepository.findTaskById(taskId);
         if (task.isPresent()) {
-            task.get().getTags().addAll(tags);
-            repository.save(task.get());
+            if (!task.get().getTags().containsAll(tags)) {
+                task.get().getTags().addAll(tags);
+                repository.save(task.get());
+            }
         } else {
             throw new NotFoundException("Task with id=" + taskId + " not found");
         }
@@ -111,6 +116,9 @@ public class TaskService extends BugtrackingService<Task, TaskTo, TaskRepository
         summary.put(STATUS_DONE, done);
         return summary;
     }
+
+    //12.add backlog
+
 
 
 }
