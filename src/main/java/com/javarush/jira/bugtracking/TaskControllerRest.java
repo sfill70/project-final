@@ -2,7 +2,9 @@ package com.javarush.jira.bugtracking;
 
 
 import com.javarush.jira.bugtracking.internal.model.Task;
+import com.javarush.jira.common.error.IllegalRequestDataException;
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -21,17 +23,17 @@ public class TaskControllerRest {
     private TaskService taskService;
 
     @PutMapping("/tasks/{id}")
-    public ResponseEntity<?> addTagsTask(@Valid @PathVariable("id") Long id, @RequestBody String[] tags) {
-        Task task = taskService.addTagsToTask(id, Set.copyOf(Arrays.asList(tags)));
+    public ResponseEntity<?> addTagsTask(@Valid @PathVariable("id") Long id, @RequestBody @Size(min = 2, max = 32) String[] tags) {
+        for (int i = 0; i < tags.length; i++) {
+            if (tags[i].isEmpty() || tags[i].length() < 2 || tags[i].length() > 32) {
+                throw new IllegalRequestDataException("incorrect tag length with number=" + (i + 1));
+            }
+        }
+        Task task = taskService.addTagsToTask(id, Set.of(tags));
         return ResponseEntity.ok(task);
     }
 
     // 8.add task summary (valid - task id=3 )
-  /*  JSON
-    {
-        "ready": "-6 day(s) -2 hour(s) 00 minute(s) 00 second(s)",
-        "done": "-2 day(s) -19 hour(s) 00 minute(s) 00 second(s)"
-    }*/
     @PostMapping("/summary/{id}")
     @ResponseBody
     public Map<String, String> getSummary(@PathVariable Long id) {

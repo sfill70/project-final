@@ -65,7 +65,7 @@ public class Util {
         Duration duration = Duration.between(start, end);
         long millis = duration.toMillis();
 
-        return String.format("%02d day(s) %02d hour(s) %02d minute(s) %02d second(s)",
+        return String.format("%2d day(s) %2d hour(s) %2d minute(s) %2d second(s)",
                 TimeUnit.MILLISECONDS.toDays(millis),
                 TimeUnit.MILLISECONDS.toHours(millis) -
                         TimeUnit.DAYS.toHours(TimeUnit.MILLISECONDS.toDays(millis)),
