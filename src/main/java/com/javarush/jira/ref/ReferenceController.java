@@ -24,7 +24,8 @@ import static com.javarush.jira.common.util.validation.ValidationUtil.checkNew;
 @Slf4j
 
 public class ReferenceController {
-    static final String REST_URL = "/api/admin/refs";
+
+    public static final String REST_URL = "/api/admin/refs";
     private ReferenceMapper mapper;
     private ReferenceService service;
     private ReferenceRepository repository;
