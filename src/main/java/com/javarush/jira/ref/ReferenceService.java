@@ -53,7 +53,7 @@ public class ReferenceService {
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
 
-    void updateRefs(RefType type) {
+    public void updateRefs(RefType type) {
         log.debug("update by type {}", type);
         List<RefTo> refTos = mapper.toToList(repository.getByType(type));
         Map<String, RefTo> refToMap = refTos.stream()
