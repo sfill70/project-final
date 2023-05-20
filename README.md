@@ -78,7 +78,11 @@
 - https://javastudy.ru/spring-mvc/localization/
   ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/local_ru.png)
   ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/local_en.png)
-- 
+
+Перевел тесты на Testcontainers
+
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/testcontainer_test.png)
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/testcontainer_test2.png)
 
 12.ау
 13.ка
@@ -86,7 +90,7 @@
 для зпуска проекта ввести в терминале команду->     docker-compose up
 
 !!!!!!!!!!!!!!!!!-Важно изменен порт Nginx-!!!!!!!!!!!!!!!!!!!!!!!!!
-После запуска проекта в Docker  - проект доступен по алресу localhost:90 !!!!!
+После запуска проекта в Docker  - проект доступен по адресу- localhost:88 !!!!!
 
 
 
