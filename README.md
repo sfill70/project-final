@@ -80,12 +80,17 @@
   ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/local_en.png)
 
 Перевел тесты на Testcontainers
+!!!!!!!!!!!-> в Windows 10 обязательно должен быть запущен Docker !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
   ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/testcontainer_test.png)
   ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/testcontainer_test2.png)
 
-тест запуска на Ubuntu 22.04
+  Проверка - тестов, сборки и запуска на Ubuntu 22.04
+  Сборку и тестирование проходить под Super User - sudo su.
 
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/bilding_and_test_project.png)
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/bilding_and_test_project2.png)
   ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/ubuntu_run.png)
   ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/ubuntu_run2.png)
   ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/ubuntu_run3.png)
