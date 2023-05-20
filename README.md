@@ -81,8 +81,8 @@
 
 Перевел тесты на Testcontainers
 
-  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/testcontainer.png)
-  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/testcontainer2.png)
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/testcontainer_test.png)
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/testcontainer_test2.png)
 
 12.ау
 13.ка
