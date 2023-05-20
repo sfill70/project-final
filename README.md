@@ -84,6 +84,12 @@
   ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/testcontainer_test.png)
   ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/testcontainer_test2.png)
 
+тест запуска на Ubuntu 22.04
+
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/ubuntu_run.png)
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/ubuntu_run2.png)
+  ![Image alt](https://github.com/sfill70/project-final/blob/master/resources/static/img/ubuntu_run3.png)
+
 12.ау
 13.ка
 
