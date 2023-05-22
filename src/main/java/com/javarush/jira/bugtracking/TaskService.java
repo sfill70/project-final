@@ -117,6 +117,39 @@ public class TaskService extends BugtrackingService<Task, TaskTo, TaskRepository
         return summary;
     }
 
+    /*public String getTaskSummary(Long taskId) {
+        Map<String, String> summary = new HashMap<>();
+        Task task = null;
+        try {
+            task = repository.getExisted(taskId);
+        } catch (Exception e) {
+            summary.put(STATUS_IN_PROGRESS, "NO THIS TASK");
+            summary.put(STATUS_DONE, "NO TASK");
+            return summary;
+        }
+        List<Activity> activityList = activityRepository.findByTaskAndUpdatedNotNullAndStatusCodeNotNullOrderByUpdated(task);
+        if (activityList.size() == 0) {
+            summary.put(STATUS_IN_PROGRESS, "NO DATA");
+            summary.put(STATUS_DONE, "NO DATA");
+            return summary;
+        }
+        Map<String, LocalDateTime> updateMap = new HashMap<>();
+        for (Activity activity : activityList) {
+            updateMap.put(activity.getStatusCode(), activity.getUpdated());
+        }
+        String ready = updateMap.containsKey(STATUS_IN_PROGRESS) && updateMap.containsKey(STATUS_READY)
+                ? getFormattedDuration(updateMap.get(STATUS_READY), updateMap.get(STATUS_IN_PROGRESS))
+                : "TASK IN WORK";
+        String done = updateMap.containsKey(STATUS_IN_PROGRESS) && updateMap.containsKey(STATUS_DONE)
+                ? getFormattedDuration(updateMap.get(STATUS_DONE), updateMap.get(STATUS_IN_PROGRESS))
+                : "TEST IN WORK";
+        summary.put(STATUS_READY, ready);
+        summary.put(STATUS_DONE, done);
+        return summary;
+    }*/
+
+
+
     //12.add backlog
 
 
